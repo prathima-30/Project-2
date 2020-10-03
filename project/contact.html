@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>States and Foods</title>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet3.css">
+</head>
+<body>
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+    <h1 align="center"> Contact </h1>
+    <div id="after_submit"></div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row" align="center">
+            <label class="required" for="name">Your name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row" align="center">
+            <label class="required" for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row" align="center">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+        </div>
+        <div class="input" align="center">
+            <input id="submit_button" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
